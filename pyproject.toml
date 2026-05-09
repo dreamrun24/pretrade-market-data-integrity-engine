@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pretrade-data-integrity-engine"
+version = "0.1.0"
+description = "Pre-trade market data validation, cleaning, scoring, and reporting pipeline."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Pre-Trade Market Data Integrity Engine"}]
+dependencies = [
+    "yfinance>=0.2",
+    "pandas>=1.5",
+    "numpy>=1.23",
+    "matplotlib>=3.6",
+    "scipy>=1.9",
+]
+
+[tool.setuptools.packages.find]
+include = ["pipeline*", "extensions*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
