@@ -127,7 +127,10 @@ For each ticker:
 Shared across all tickers:
 - `multi_ticker_comparison.png` - return distributions vs
   normal curve, one panel per ticker, fat tails visible
-- `quality_dashboard.html` - health check across every ticker
+- `quality_dashboard.html` - health check across every ticker,
+  including quality scores, alerts, outlier events, fat-tail
+  comparison, and per-ticker pipeline visualizations
+
 - `pipeline_summary.txt` - one line per ticker
 
 ---
